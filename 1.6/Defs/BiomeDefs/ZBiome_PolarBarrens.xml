@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<BiomeDef>
+		<defName>ZBiome_PolarBarrens</defName>
+		<label>polar barrens</label>
+		<description>Wind-scoured gravel and permafrost, bone-dry with no real snowpack: a cold desert. Almost nothing grows, but the ground is solid and buildable, scattered with minerals, and defended by sheer isolation.</description>
+		<texture>World/Biomes/ZBiome_GlacialShield</texture>
+		<workerClass>MoreVanillaBiomesExpansion.BiomeWorker_Parametric</workerClass>
+		<settlementSelectionWeight>0.15</settlementSelectionWeight>
+		<movementDifficulty>1.1</movementDifficulty>
+		<animalDensity>0.5</animalDensity>
+		<plantDensity>0.15</plantDensity>
+		<wildPlantRegrowDays>32</wildPlantRegrowDays>
+		<forageability>0.1</forageability>
+		<foragedFood>RawBerries</foragedFood>
+		<lakeBeachTerrain>Ice</lakeBeachTerrain>
+		<riverbankTerrain>Ice</riverbankTerrain>
+		<isExtremeBiome>true</isExtremeBiome>
+		<maxFishPopulation>420</maxFishPopulation>
+		<fishTypes MayRequire="Ludeon.RimWorld.Odyssey">
+			<freshwater_Common><Fish_Salmon MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Salmon></freshwater_Common>
+			<freshwater_Uncommon><Fish_Frostfish MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Frostfish></freshwater_Uncommon>
+			<saltwater_Common><Fish_Cod MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Cod></saltwater_Common>
+			<saltwater_Uncommon><Fish_Dogfish MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Dogfish></saltwater_Uncommon>
+			<rareCatchesSetMaker MayRequire="Ludeon.RimWorld.Odyssey">RareFishingCatches_Cold</rareCatchesSetMaker>
+		</fishTypes>
+		<soundsAmbient>
+			<li>Ambient_Wind_Desolate</li>
+		</soundsAmbient>
+		<diseaseMtbDays>65</diseaseMtbDays>
+		<diseases>
+			<li><diseaseInc>Disease_Flu</diseaseInc><commonality>100</commonality></li>
+			<li><diseaseInc>Disease_Plague</diseaseInc><commonality>80</commonality></li>
+			<li><diseaseInc>Disease_GutWorms</diseaseInc><commonality>50</commonality></li>
+			<li><diseaseInc>Disease_FibrousMechanites</diseaseInc><commonality>30</commonality></li>
+			<li><diseaseInc>Disease_SensoryMechanites</diseaseInc><commonality>30</commonality></li>
+			<li><diseaseInc>Disease_MuscleParasites</diseaseInc><commonality>50</commonality></li>
+			<li><diseaseInc>Disease_AnimalFlu</diseaseInc><commonality>100</commonality></li>
+			<li><diseaseInc>Disease_AnimalPlague</diseaseInc><commonality>100</commonality></li>
+		</diseases>
+		<terrainsByFertility>
+			<li><terrain>Gravel</terrain><min>-999</min><max>0.7</max></li>
+			<li><terrain>Soil</terrain><min>0.7</min><max>0.93</max></li>
+			<li><terrain>SoilRich</terrain><min>0.93</min><max>999</max></li>
+		</terrainsByFertility>
+		<terrainPatchMakers>
+			<li>
+				<perlinFrequency>0.045</perlinFrequency>
+				<perlinLacunarity>1.8</perlinLacunarity>
+				<thresholds>
+					<li><terrain>Sandstone_Rough</terrain><min>-999</min><max>-0.15</max></li>
+					<li><terrain>Gravel</terrain><min>-0.15</min><max>0.1</max></li>
+				</thresholds>
+			</li>
+		</terrainPatchMakers>
+		<baseWeatherCommonalities>
+			<Clear>18</Clear>
+			<Fog>1</Fog>
+			<Rain>1.5</Rain>
+			<DryThunderstorm>1</DryThunderstorm>
+			<RainyThunderstorm>1</RainyThunderstorm>
+			<FoggyRain>1</FoggyRain>
+			<SnowGentle>4</SnowGentle>
+			<SnowHard>4</SnowHard>
+			<GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
+			<Overcast MayRequire="Ludeon.RimWorld.Odyssey">2</Overcast>
+			<Blizzard MayRequire="Ludeon.RimWorld.Odyssey">2</Blizzard>
+			<TorrentialRain MayRequire="Ludeon.RimWorld.Odyssey">0.3</TorrentialRain>
+		</baseWeatherCommonalities>
+		<wildPlants>
+			<Plant_Moss>1.5</Plant_Moss>
+			<Plant_Grass>0.6</Plant_Grass>
+			<Plant_Bush>0.4</Plant_Bush>
+			<Plant_Astragalus>0.1</Plant_Astragalus>
+			<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">1</Plant_GrayGrass>
+		</wildPlants>
+		<wildAnimals>
+			<Snowhare>1.0</Snowhare>
+			<Fox_Arctic>0.15</Fox_Arctic>
+			<Wolf_Arctic>0.08</Wolf_Arctic>
+			<Bear_Polar>0.05</Bear_Polar>
+			<Rat>0.3</Rat>
+			<Muffalo>0.2</Muffalo>
+			<Caribou>0.3</Caribou>
+			<Muskox MayRequire="Ludeon.RimWorld.Odyssey">0.3</Muskox>
+			<Wolf_Great MayRequire="Ludeon.RimWorld.Odyssey">0.04</Wolf_Great>
+		</wildAnimals>
+		<allowedPackAnimals>
+			<li>Muffalo</li>
+		</allowedPackAnimals>
+		<modExtensions>
+			<li Class="MoreVanillaBiomesExpansion.BiomeExtension">
+				<minTemp>-38</minTemp>
+				<maxTemp>-10</maxTemp>
+				<maxRainfall>260</maxRainfall>
+				<maxSwampiness>0.2</maxSwampiness>
+				<minHilliness>1</minHilliness>
+				<maxHilliness>3</maxHilliness>
+				<score>15</score>
+			</li>
+		</modExtensions>
+	</BiomeDef>
+
+</Defs>

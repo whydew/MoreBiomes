@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ModMetaData>
+  <name>More Vanilla Biomes</name>
+  <author>Zylle</author>
+  <supportedVersions>
+	<li>1.0</li>
+	<li>1.1</li>
+	<li>1.2</li>
+	<li>1.3</li>
+	<li>1.4</li>
+	<li>1.5</li>
+	<li>1.6</li>
+   </supportedVersions>
+	<modIconPath IgnoreIfNoMatchingField="True">GUI/ZModLogo</modIconPath>
+   <packageId>zylle.MoreVanillaBiomes</packageId>
+   <modDependencies>
+    <li>
+        <packageId>brrainz.harmony</packageId>
+        <displayName>Harmony</displayName>
+        <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+        <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+    </li>
+</modDependencies>
+  <description>
+Features:
+More Vanilla Biomes adds more map variety without overhauling the game. Includes eight new vanilla-friendly biomes.
+
+Marsh: Marshy terrain with dense plants but few trees. Temperate to cold.
+
+Stormy Savanna: Warm, with poor soil, lots of grass, and few trees.
+
+Coastal Dunes: Low-lying sandy area with lots of water.
+
+Sandbar: Smooth, flat, sandy islands with little if any vegetation or arable land.
+
+Alpine Meadow: A beautiful area with fertile soil, lots of flowers, and few predators. The summers are mild and bountiful, and the winters are cold and harsh.
+
+Desert Oasis: Desert with groundwater close to the surface, making small lakes that support pockets thick vegetation.
+
+Ice Floes: Frigid chunks of ice floating on the ocean. Who would want to live here?
+
+Cloud Forest: Found at the tops of tropical mountains and named for the constant fog. Animals frequently wander up the slopes from the forests below.
+
+Badlands: Rocky, dry and desolate, these temperate regions feature little life.
+
+Glacial Shield: Where the glacier meets the tundra, this area is icy, rocky, and cold almost year-round. Thick stands of forest are concentrated in patches of soil and around lakes, attracting wildlife.
+
+-------------------------
+Expansion Pack (24 additional biomes)
+A large expansion adding twenty-four more vanilla-friendly biomes, each filling a climate or geography niche left open by the base game and its DLC. All of them lean on vanilla plants, animals, and terrain, and are placed by a single data-driven world-generation worker.
+
+Temperate &amp; transitional: Cold Steppe, Oak Savanna, Chaparral, Redwood Coast, Highland Moor.
+Arid &amp; hot: Thornscrub Savanna, Salt Flat, Mesa Canyonlands, Loess Plateau, Bamboo Jungle.
+Cold &amp; boreal: Thermokarst Thawlands, Boreal Muskeg, Polar Barrens, Alpine Fell.
+Coastal &amp; aquatic: Mangrove Swamp, Rocky Coast, Tidal Flats, Kelp Lagoon, Salt Marsh.
+Highland &amp; exotic: Paramo, Karst Hills, Flooded Grassland, Hot Springs Basin, Xeric High Desert.
+
+-------------------------
+Compatibility
+This mod is meant to be as widely compatible as possible. Please report any issues.
+
+Compatible with other biome mods including Alpha Biomes, Advanced Biomes, Archipelagos,and Nature's Pretty Sweet.
+
+Patched for many plant and animal mods.
+
+Mods that change world generation may cause strange results, please report any issues.
+
+
+
+
+Fishing-- compatible with:
+Vanilla Fishing Expanded
+FishIndustry
+[RF] Fishing [1.0]
+
+Recommended
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1095331978]Prepare Landing[/url] to help find the biome of your choice
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=761315214]Map Reroll[/url] if playing on maps without much solid ground.
+Your choice of gravel visibility mod, especially if playing in Grasslands or Dunes. Some options are [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1613910454]Gravel[/url], [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1541281864]Where's the Gravel?[/url], and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1561838700]Soil Contrast[/url]
+
+Incompatibility
+Terra Project: Makes extensive changes to world generation that I can't work around.
+
+Please report any other incompatibilities you find.
+
+-------------------------
+Credits:
+This mod uses code borrowed from [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1539309846]Rainbeau's Archipelagos[/url]
+
+Translations:
+Japanese by Proxyer
+French by DrTCS and qux
+Simplified Chinese by 第四天灾
+
+-------------------------
+Links:
+Get it on Github: https://github.com/Zylleon/MoreVanillaBiomes/releases/latest
+Discord: https://discord.gg/CQrsbEV
+My other mods: https://steamcommunity.com/profiles/76561197998830956/myworkshopfiles/?appid=294100
+
+Support me: https://ko-fi.com/zylleon
+
+
+
+</description>
+</ModMetaData>

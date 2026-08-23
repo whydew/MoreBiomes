@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<BiomeDef>
+		<defName>ZBiome_SaltFlat</defName>
+		<label>salt flat</label>
+		<description>A blinding, cracked mineral crust stretching to the horizon, hard as tile and nearly lifeless. Nothing grows and little moves, but the ground is dead flat and rich in minerals.</description>
+		<texture>World/Biomes/ZBiome_Oasis</texture>
+		<workerClass>MoreVanillaBiomesExpansion.BiomeWorker_Parametric</workerClass>
+		<settlementSelectionWeight>0.15</settlementSelectionWeight>
+		<movementDifficulty>1.1</movementDifficulty>
+		<animalDensity>0.35</animalDensity>
+		<plantDensity>0.15</plantDensity>
+		<wildPlantRegrowDays>35</wildPlantRegrowDays>
+		<forageability>0.1</forageability>
+		<foragedFood>RawAgave</foragedFood>
+		<lakeBeachTerrain>Sand</lakeBeachTerrain>
+		<riverbankTerrain>Sand</riverbankTerrain>
+		<isExtremeBiome>true</isExtremeBiome>
+		<maxFishPopulation>300</maxFishPopulation>
+		<fishTypes MayRequire="Ludeon.RimWorld.Odyssey">
+			<freshwater_Common><Fish_Tilapia MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Tilapia></freshwater_Common>
+			<freshwater_Uncommon><Fish_Catfish MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Catfish></freshwater_Uncommon>
+			<saltwater_Common><Fish_Bluefish MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Bluefish></saltwater_Common>
+			<saltwater_Uncommon><Fish_Tuna MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Tuna></saltwater_Uncommon>
+			<rareCatchesSetMaker MayRequire="Ludeon.RimWorld.Odyssey">RareFishingCatches_Hot</rareCatchesSetMaker>
+		</fishTypes>
+		<soundsAmbient>
+			<li>Ambient_Wind_Desolate</li>
+		</soundsAmbient>
+		<diseaseMtbDays>90</diseaseMtbDays>
+		<diseases>
+			<li><diseaseInc>Disease_Flu</diseaseInc><commonality>100</commonality></li>
+			<li><diseaseInc>Disease_Plague</diseaseInc><commonality>80</commonality></li>
+			<li><diseaseInc>Disease_GutWorms</diseaseInc><commonality>40</commonality></li>
+			<li><diseaseInc>Disease_MuscleParasites</diseaseInc><commonality>40</commonality></li>
+			<li><diseaseInc>Disease_FibrousMechanites</diseaseInc><commonality>30</commonality></li>
+			<li><diseaseInc>Disease_SensoryMechanites</diseaseInc><commonality>30</commonality></li>
+			<li><diseaseInc>Disease_AnimalFlu</diseaseInc><commonality>100</commonality></li>
+			<li><diseaseInc>Disease_AnimalPlague</diseaseInc><commonality>80</commonality></li>
+		</diseases>
+		<terrainsByFertility>
+			<li><terrain>Sand</terrain><min>-999</min><max>0.9</max></li>
+			<li><terrain>SoftSand</terrain><min>0.9</min><max>999</max></li>
+		</terrainsByFertility>
+		<baseWeatherCommonalities>
+			<Clear>20</Clear>
+			<Fog>0.5</Fog>
+			<Rain>1</Rain>
+			<DryThunderstorm>1.5</DryThunderstorm>
+			<RainyThunderstorm>0.3</RainyThunderstorm>
+			<FoggyRain>0.5</FoggyRain>
+			<SnowGentle>3</SnowGentle>
+			<SnowHard>3</SnowHard>
+			<GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
+			<Sandstorm MayRequire="Ludeon.RimWorld.Odyssey">2.5</Sandstorm>
+			<Windy MayRequire="Ludeon.RimWorld.Odyssey">1</Windy>
+		</baseWeatherCommonalities>
+		<wildPlants>
+			<Plant_Bush>0.3</Plant_Bush>
+			<Plant_Agave>0.2</Plant_Agave>
+			<Plant_PincushionCactus>0.2</Plant_PincushionCactus>
+			<Plant_Grass>0.4</Plant_Grass>
+			<Plant_PebbleCactus MayRequire="Ludeon.RimWorld.Biotech">0.2</Plant_PebbleCactus>
+			<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">0.3</Plant_GrayGrass>
+		</wildPlants>
+		<wildAnimals>
+			<Rat>0.6</Rat>
+			<Iguana>0.4</Iguana>
+			<Boomrat>0.2</Boomrat>
+			<Dromedary>0.15</Dromedary>
+			<Ostrich>0.15</Ostrich>
+			<Fox_Fennec>0.05</Fox_Fennec>
+			<Megascarab>0.2</Megascarab>
+			<MonitorLizard MayRequire="Ludeon.RimWorld.Odyssey">0.2</MonitorLizard>
+			<Vulture MayRequire="Ludeon.RimWorld.Odyssey">0.3</Vulture>
+			<Armadillo MayRequire="Ludeon.RimWorld.Odyssey">0.1</Armadillo>
+		</wildAnimals>
+		<allowedPackAnimals>
+			<li>Dromedary</li>
+			<li>Muffalo</li>
+		</allowedPackAnimals>
+		<modExtensions>
+			<li Class="MoreVanillaBiomesExpansion.BiomeExtension">
+				<minTemp>4</minTemp>
+				<maxTemp>48</maxTemp>
+				<maxRainfall>200</maxRainfall>
+				<maxSwampiness>0.1</maxSwampiness>
+				<minHilliness>1</minHilliness>
+				<maxHilliness>1</maxHilliness>
+				<rejectChance>0.55</rejectChance>
+				<score>16</score>
+			</li>
+		</modExtensions>
+	</BiomeDef>
+
+</Defs>
